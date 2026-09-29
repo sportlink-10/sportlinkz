@@ -22,19 +22,19 @@
   // Detect current domain
   const currentDomain = window.location.hostname;
   const isSportlink = currentDomain.includes('Sportlink');
-  const isAllrounderLive = currentDomain.includes('allrounderlive');
+  const isSportlink = currentDomain.includes('Sportlink');
   
   // Set site-specific variables
-  const siteName = isSportlink ? 'Sportlink' : 'AllrounderLive';
-  const siteTitle = isSportlink ? 'Sportlink' : 'AllrounderLive';
+  const siteName = isSportlink ? 'Sportlink' : 'Sportlink';
+  const siteTitle = isSportlink ? 'Sportlink' : 'Sportlink';
   const siteDescription = isSportlink 
     ? 'Watch live sports streaming, match highlights, and real-time scores on Sportlink. Free access to football, cricket, and all major sports events.'
-    : 'Watch live sports streaming, match highlights, and real-time scores on AllrounderLive. Free access to football, cricket, and all major sports events.';
-  const siteUrl = isSportlink ? 'https://sportlink.in/' : 'https://allrounderlive.in/';
-  const twitterHandle = isSportlink ? '@Sportlink' : '@allrounderlive';
+    : 'Watch live sports streaming, match highlights, and real-time scores on Sportlink. Free access to football, cricket, and all major sports events.';
+  const siteUrl = isSportlink ? 'https://sportlink.in/' : 'https://Sportlink.in/';
+  const twitterHandle = isSportlink ? '@Sportlink' : '@Sportlink';
   const siteKeywords = isSportlink 
     ? 'live sports, match streaming, football highlights, cricket live, sports scores, Sportlink, live match, sports streaming'
-    : 'live sports, match streaming, football highlights, cricket live, sports scores, allrounderlive, live match, sports streaming';
+    : 'live sports, match streaming, football highlights, cricket live, sports scores, Sportlink, live match, sports streaming';
   
   // Update meta tags dynamically
   document.addEventListener('DOMContentLoaded', function() {
@@ -113,10 +113,10 @@
       "logo": url + "images/logo.png",
       "description": description,
       "sameAs": [
-        "https://twitter.com/" + (name === 'Sportlink' ? 'Sportlink' : 'allrounderlive'),
-        "https://facebook.com/" + (name === 'Sportlink' ? 'Sportlink' : 'allrounderlive'),
-        "https://instagram.com/" + (name === 'Sportlink' ? 'Sportlink' : 'allrounderlive'),
-        "https://youtube.com/" + (name === 'Sportlink' ? 'Sportlink' : 'allrounderlive')
+        "https://twitter.com/" + (name === 'Sportlink' ? 'Sportlink' : 'Sportlink'),
+        "https://facebook.com/" + (name === 'Sportlink' ? 'Sportlink' : 'Sportlink'),
+        "https://instagram.com/" + (name === 'Sportlink' ? 'Sportlink' : 'Sportlink'),
+        "https://youtube.com/" + (name === 'Sportlink' ? 'Sportlink' : 'Sportlink')
       ]
     };
     
@@ -236,10 +236,10 @@
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
 <!-- ====== FAVICON & APPLE TOUCH ICON ====== -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
+
+
+
+
 <meta name="theme-color" content="#0b0d0f" />
 
 
