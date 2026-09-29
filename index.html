@@ -44,7 +44,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <!-- Willow Live Styles -->
   <link rel="stylesheet" href="willow-live.css">
   <link rel="stylesheet" href="world-sports.css" />
   <link rel="stylesheet" href="fancode.css">
@@ -148,18 +147,16 @@
     }
   </script>
 
-  <!-- ====== STATIC META TAGS (will be updated by JavaScript) ====== -->
+  <!-- ====== STATIC META TAGS ====== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Primary Meta Tags -->
   <title>Sportlink - Live Sports Streaming, Match Highlights & Scores</title>
   <meta name="description" content="Watch live sports streaming, match highlights, and real-time scores on Sportlink. Free access to football, cricket, and all major sports events." />
   <meta name="keywords" content="live sports, match streaming, football highlights, cricket live, sports scores, Sportlink, live match, sports streaming" />
   <link rel="canonical" href="https://sportlink.in/" />
 
-  <!-- Open Graph (OG) Tags -->
   <meta property="og:title" content="Sportlink - Live Sports Streaming & Match Highlights" />
   <meta property="og:description" content="Watch live sports, match highlights, and real-time scores. Free streaming for football, cricket, and all major tournaments." />
   <meta property="og:url" content="https://sportlink.in/" />
@@ -170,7 +167,6 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="en_IN" />
 
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sportlink - Live Sports Streaming & Match Highlights" />
   <meta name="twitter:description" content="Watch live sports, match highlights, and real-time scores. Free streaming for football, cricket, and all major tournaments." />
@@ -178,14 +174,12 @@
   <meta name="twitter:site" content="@Sportlink" />
   <meta name="twitter:creator" content="@Sportlink" />
 
-  <!-- Additional SEO Tags -->
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <meta name="googlebot" content="index, follow" />
   <meta name="bingbot" content="index, follow" />
   <link rel="alternate" hreflang="en" href="https://sportlinkzz.pages.dev/" />
   <link rel="alternate" hreflang="en-IN" href="https://sportlinkzz.pages.dev/" />
 
-  <!-- ====== SCHEMA MARKUP (JSON-LD) ====== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -230,7 +224,6 @@
   }
   </script>
 
-  <!-- ====== VERIFICATION META TAGS ====== -->
   <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
   <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" />
   <meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE" />
@@ -247,7 +240,6 @@
       box-sizing: border-box;
     }
 
-    /* ---------- UI COLOR SYSTEM ---------- */
     :root {
       --bg-primary: #060910;
       --bg-elevated: #0b1018;
@@ -280,54 +272,205 @@
       position: relative;
     }
 
-    /* ---------- AD SLOTS ---------- */
-    .ad-slot {
+    /* ---------- SUPPORT US SECTION ---------- */
+    .support-section {
       width: 100%;
-      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 5vw, 3rem);
+      background: var(--bg-primary);
+    }
+
+    .support-card {
+      position: relative;
+      width: 100%;
+      max-width: 560px;
+      background: linear-gradient(160deg, rgba(0, 229, 255, 0.08), rgba(0, 229, 255, 0.02));
+      border: 1px solid rgba(0, 229, 255, 0.2);
+      border-radius: clamp(16px, 2.5vw, 24px);
+      padding: clamp(1.8rem, 4vw, 2.8rem) clamp(1.4rem, 4vw, 2.5rem);
+      text-align: center;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 60px rgba(0, 229, 255, 0.06);
+    }
+
+    .support-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.1), transparent 55%);
+      pointer-events: none;
+    }
+
+    .support-icon {
+      width: clamp(52px, 8vw, 68px);
+      height: clamp(52px, 8vw, 68px);
+      margin: 0 auto clamp(0.8rem, 1.8vw, 1.2rem);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
-      background: var(--bg-elevated);
-      border-radius: clamp(6px, 1vw, 10px);
-      border: 1px solid rgba(255, 255, 255, 0.04);
-      margin: 0 auto;
+      background: linear-gradient(135deg, #00e5ff, #0093b3);
+      color: #060910;
+      box-shadow: 0 0 40px rgba(0, 229, 255, 0.35);
+      position: relative;
+      z-index: 1;
     }
 
-    .ad-slot--leaderboard {
-      min-height: 90px;
+    .support-icon svg {
+      width: 55%;
+      height: 55%;
+    }
+
+    .support-title {
+      font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+      font-weight: 800;
+      color: #ffffff;
+      font-family: 'Inter', system-ui, sans-serif;
+      letter-spacing: -0.01em;
+      margin: 0 0 clamp(0.4rem, 1vw, 0.7rem);
+      position: relative;
+      z-index: 1;
+    }
+
+    .support-text {
+      font-size: clamp(0.85rem, 1.4vw, 1rem);
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.55;
+      margin: 0 auto clamp(1.2rem, 2.5vw, 1.6rem);
+      font-family: 'Inter', system-ui, sans-serif;
+      position: relative;
+      z-index: 1;
+      max-width: 380px;
+    }
+
+    .support-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: clamp(0.4rem, 0.8vw, 0.6rem);
+      padding: clamp(0.7rem, 1.6vw, 1rem) clamp(1.6rem, 4vw, 2.4rem);
+      background: linear-gradient(135deg, #00e5ff 0%, #00b8d4 50%, #0093b3 100%);
+      color: #060910;
+      font-size: clamp(0.85rem, 1.5vw, 1.05rem);
+      font-weight: 700;
+      font-family: 'Inter', system-ui, sans-serif;
+      border: none;
+      border-radius: clamp(40px, 5vw, 60px);
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 8px 24px rgba(0, 229, 255, 0.35), 0 4px 12px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    .support-btn:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 14px 36px rgba(0, 229, 255, 0.5), 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .support-btn:active {
+      transform: translateY(0) scale(0.97);
+    }
+
+    .support-btn .icon {
+      font-size: 1.05em;
+      line-height: 1;
+    }
+
+    /* compact inline support banner */
+    .support-inline {
+      width: 100%;
       max-width: 970px;
       margin: clamp(0.8rem, 2vw, 1.6rem) auto;
-      padding: 0 clamp(0.5rem, 2vw, 1rem);
+      padding: clamp(0.8rem, 1.8vw, 1.1rem) clamp(1rem, 3vw, 1.6rem);
+      background: linear-gradient(135deg, rgba(0, 229, 255, 0.06), rgba(0, 229, 255, 0.015));
+      border: 1px solid rgba(0, 229, 255, 0.18);
+      border-radius: clamp(12px, 2vw, 16px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: clamp(0.8rem, 2vw, 1.5rem);
+      flex-wrap: wrap;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     }
 
-    .ad-slot--rect {
-      min-height: 250px;
-      max-width: 336px;
-      margin: clamp(1rem, 2.5vw, 2rem) auto;
+    .support-inline__text {
+      display: flex;
+      align-items: center;
+      gap: clamp(0.6rem, 1.5vw, 1rem);
+      flex: 1 1 220px;
+      min-width: 0;
     }
 
-    .ad-slot--inline {
-      min-height: 100px;
-      margin: clamp(0.6rem, 1.5vw, 1.2rem) clamp(1rem, 5vw, 3rem);
-      padding: clamp(0.4rem, 1vw, 0.8rem);
-    }
-
-    .ad-slot__inner {
-      width: 100%;
+    .support-inline__icon {
+      flex-shrink: 0;
+      width: clamp(34px, 5vw, 42px);
+      height: clamp(34px, 5vw, 42px);
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
+      background: linear-gradient(135deg, #00e5ff, #0093b3);
+      color: #060910;
+      box-shadow: 0 0 24px rgba(0, 229, 255, 0.35);
     }
 
-    .ad-slot__label {
-      font-size: 0.65rem;
-      letter-spacing: 0.12em;
+    .support-inline__icon svg {
+      width: 55%;
+      height: 55%;
+    }
+
+    .support-inline__title {
+      font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+      font-weight: 700;
+      color: #ffffff;
+      font-family: 'Inter', system-ui, sans-serif;
+      margin: 0;
+      letter-spacing: -0.005em;
+    }
+
+    .support-inline__sub {
+      font-size: clamp(0.7rem, 1.1vw, 0.82rem);
+      color: rgba(255, 255, 255, 0.55);
+      font-family: 'Inter', system-ui, sans-serif;
+      margin: 2px 0 0;
+    }
+
+    .support-inline__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: clamp(0.5rem, 1.1vw, 0.65rem) clamp(1rem, 2.4vw, 1.4rem);
+      background: linear-gradient(135deg, #00e5ff 0%, #00b8d4 100%);
+      color: #060910;
+      font-size: clamp(0.75rem, 1.2vw, 0.85rem);
+      font-weight: 700;
+      font-family: 'Inter', system-ui, sans-serif;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.25);
-      padding: 0.4rem 0;
-      font-weight: 600;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 18px rgba(0, 229, 255, 0.3);
+      flex-shrink: 0;
+    }
+
+    .support-inline__btn:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 10px 26px rgba(0, 229, 255, 0.5);
+    }
+
+    .support-inline__btn .icon {
+      font-size: 1em;
+      line-height: 1;
     }
 
     /* ---------- HEADER ---------- */
@@ -347,7 +490,6 @@
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* ---------- LOGO ---------- */
     .logo {
       text-decoration: none;
       font-size: clamp(0.85rem, 2.5vw, 1.5rem);
@@ -377,7 +519,6 @@
       font-weight: 700;
     }
 
-    /* ---------- HEADER NAV - DESKTOP ---------- */
     .header-nav {
       display: flex;
       align-items: center;
@@ -415,7 +556,6 @@
       background: var(--accent-dark);
     }
 
-    /* ---------- HAMBURGER MENU ---------- */
     .hamburger {
       display: none;
       flex-direction: column;
@@ -450,7 +590,6 @@
       transform: rotate(-45deg) translate(clamp(5px, 0.6vw, 7px), clamp(-5px, -0.6vw, -7px));
     }
 
-    /* ---------- MOBILE MENU OVERLAY ---------- */
     .mobile-menu {
       display: none;
       position: fixed;
@@ -557,7 +696,6 @@
       pointer-events: none;
     }
 
-    /* ---------- GRADIENTS ---------- */
     .gradient-left {
       position: absolute;
       top: 0;
@@ -597,7 +735,6 @@
       z-index: 2;
     }
 
-    /* ---------- SLIDER PROGRESS BAR ---------- */
     .slider-progress {
       position: absolute;
       top: clamp(4.5rem, 9vh, 6.5rem);
@@ -642,7 +779,6 @@
       to { width: 100%; }
     }
 
-    /* ---------- SLIDER ARROWS ---------- */
     .slider-arrow {
       position: absolute;
       top: 50%;
@@ -697,7 +833,6 @@
       }
     }
 
-    /* ---------- MATCH DETAILS OVERLAY ---------- */
     .match-details {
       position: absolute;
       bottom: clamp(8%, 12vh, 18%);
@@ -953,7 +1088,6 @@
       }
     }
 
-    /* ---------- GLASS CLOUDS ---------- */
     .glass-cloud {
       position: fixed;
       border-radius: 50%;
@@ -1062,7 +1196,6 @@
       }
     }
 
-    /* ---------- CAROUSEL ARROWS (shared) ---------- */
     .carousel-arrow {
       position: absolute;
       top: 40%;
@@ -1113,7 +1246,6 @@
       }
     }
 
-    /* ---------- MAIN ---------- */
     main {
       flex: 1;
       min-height: 100vh;
@@ -1124,7 +1256,6 @@
       background: var(--bg-primary);
     }
 
-    /* ---------- RESPONSIVE ---------- */
     @media (orientation: portrait) and (max-width: 768px) {
       header {
         padding: clamp(0.3rem, 1.2vw, 0.5rem) clamp(0.8rem, 3vw, 1.2rem);
@@ -1178,10 +1309,6 @@
         padding: clamp(0.7rem, 2vw, 1rem) clamp(1.2rem, 3.5vw, 2rem);
         font-size: clamp(0.9rem, 2.5vw, 1.2rem);
       }
-
-      .ad-slot--leaderboard {
-        min-height: 50px;
-      }
     }
 
     @media (orientation: portrait) and (max-width: 480px) {
@@ -1227,6 +1354,15 @@
 
     @media (max-width: 768px) {
       .cloud-1 { width: 85vw; height: 35vh; }
+
+      .support-inline {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .support-inline__text {
+        justify-content: center;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1239,7 +1375,6 @@
       }
     }
 
-    /* ---------- SCROLL-PEEK FIX ---------- */
     @media (max-width: 1024px) {
       .poster-wrapper {
         height: 74vh;
@@ -1296,7 +1431,6 @@
       .scroll-indicator { display: none; }
     }
 
-    /* ---------- DESKTOP 16:9 BANNER FIX ---------- */
     @media (min-width: 769px) {
       .poster-wrapper {
         height: auto;
@@ -1338,6 +1472,7 @@
       <a href="#worldSportsSection" class="nav-scroll">Sports</a>
       <a href="#willowSection" class="nav-scroll">Willow</a>
       <a href="#fancodeSection" class="nav-scroll">Fancode</a>
+      <a href="#supportSection" class="nav-scroll">Support</a>
     </nav>
   </header>
 
@@ -1347,6 +1482,7 @@
     <a href="#worldSportsSection" class="nav-scroll">Sports</a>
     <a href="#willowSection" class="nav-scroll">Willow</a>
     <a href="#fancodeSection" class="nav-scroll">Fancode</a>
+    <a href="#supportSection" class="nav-scroll">Support</a>
   </div>
 
   <!-- ====== POSTER SECTION - CLICKABLE / SLIDER ====== -->
@@ -1532,11 +1668,23 @@
   <!-- ====== MAIN CONTENT ====== -->
   <main role="main">
 
-    <!-- ====== AD SLOT: Leaderboard ====== -->
-    <div class="ad-slot ad-slot--leaderboard" id="adSlotTop" aria-label="Advertisement">
-      <div class="ad-slot__inner">
-        <span class="ad-slot__label">Advertisement</span>
+    <!-- ====== SUPPORT INLINE BANNER (top) ====== -->
+    <div class="support-inline">
+      <div class="support-inline__text">
+        <div class="support-inline__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="support-inline__title">Enjoying Sportlink?</p>
+          <p class="support-inline__sub">Help keep the streams alive.</p>
+        </div>
       </div>
+      <a href="https://sportlink10-ajp.pages.dev/support" class="support-inline__btn" target="_blank" rel="noopener">
+        <span class="icon">♥</span>
+        <span>Support Us</span>
+      </a>
     </div>
 
     <!-- ====== WILLOW LIVE SECTION ====== -->
@@ -1557,11 +1705,23 @@
     <link rel="stylesheet" href="willow-live.css">
     <script src="willow-live.js"></script>
 
-    <!-- ====== AD SLOT: In-feed after Willow ====== -->
-    <div class="ad-slot ad-slot--inline" id="adSlotMid" aria-label="Advertisement">
-      <div class="ad-slot__inner">
-        <span class="ad-slot__label">Advertisement</span>
+    <!-- ====== SUPPORT INLINE BANNER (mid) ====== -->
+    <div class="support-inline">
+      <div class="support-inline__text">
+        <div class="support-inline__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+        <div>
+          <p class="support-inline__title">Support Sportlink</p>
+          <p class="support-inline__sub">Every contribution keeps us streaming free.</p>
+        </div>
       </div>
+      <a href="https://sportlink10-ajp.pages.dev/support" class="support-inline__btn" target="_blank" rel="noopener">
+        <span class="icon">♥</span>
+        <span>Donate</span>
+      </a>
     </div>
 
     <!-- ====== FANCODE SECTION ====== -->
@@ -1595,12 +1755,22 @@
       </div>
     </section>
 
-    <!-- ====== AD SLOT: Bottom rectangle ====== -->
-    <div class="ad-slot ad-slot--rect" id="adSlotBottom" aria-label="Advertisement">
-      <div class="ad-slot__inner">
-        <span class="ad-slot__label">Advertisement</span>
+    <!-- ====== SUPPORT US SECTION (bottom, full card) ====== -->
+    <section class="support-section" id="supportSection">
+      <div class="support-card">
+        <div class="support-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+        <h3 class="support-title">Support Us</h3>
+        <p class="support-text">Your support keeps the streams running and the site free for everyone.</p>
+        <a href="https://sportlink10-ajp.pages.dev/support" class="support-btn" target="_blank" rel="noopener">
+          <span class="icon">♥</span>
+          <span>Support Now</span>
+        </a>
       </div>
-    </div>
+    </section>
 
     <script src="fancode.js"></script>
     <script src="world-sports.js"></script>
@@ -1767,27 +1937,6 @@
 
       updateProgressBars(currentIndex);
       restartAutoplay();
-    })();
-
-    // ====== AD SLOT FILLER ======
-    (function () {
-      function paintAdSlots() {
-        var slots = document.querySelectorAll('.ad-slot__inner');
-        slots.forEach(function (inner) {
-          if (inner.querySelector('iframe, ins, img')) return;
-          inner.innerHTML =
-            '<div style="width:100%;display:flex;align-items:center;justify-content:center;' +
-            'padding:12px;color:#00e5ff;font-weight:700;font-size:0.85rem;' +
-            'letter-spacing:0.08em;text-transform:uppercase;opacity:0.7;">' +
-            'SPONSORED' +
-            '</div>';
-        });
-      }
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', paintAdSlots);
-      } else {
-        paintAdSlots();
-      }
     })();
 
     // ====== VIDEOS ======
