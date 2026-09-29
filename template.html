@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-  <title>matchdekho · player</title>
+  <title>Sportlink · player</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -988,14 +988,14 @@
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
-    <a href="https://matchdekho.in" class="logo" aria-label="matchdekho home">
-      <span class="match">match</span><span class="dekho">dekho</span>
+    <a href="https://sportlink.in" class="logo" aria-label="Sportlink home">
+      <span class="sport">Sport</span><span class="link">link</span>
     </a>
     <nav class="header-nav">
-      <a href="https://matchdekho.in">Home</a>
-      <a href="https://matchdekho.in/sports">Sports</a>
-      <a href="https://matchdekho.in/cricket">Cricket</a>
-      <a href="https://matchdekho.in/football">Football</a>
+      <a href="https://sportlink.in">Home</a>
+      <a href="https://sportlink.in/sports">Sports</a>
+      <a href="https://sportlink.in/cricket">Cricket</a>
+      <a href="https://sportlink.in/football">Football</a>
       <a href="#" class="sign-in">Sign In</a>
       <a href="#" class="subscribe">Watch Free</a>
     </nav>
@@ -1003,10 +1003,10 @@
 
   <!-- ====== MOBILE MENU ====== -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="https://matchdekho.in">Home</a>
-    <a href="https://matchdekho.in/sports">Sports</a>
-    <a href="https://matchdekho.in/cricket">Cricket</a>
-    <a href="https://matchdekho.in/football">Football</a>
+    <a href="https://sportlink.in">Home</a>
+    <a href="https://sportlink.in/sports">Sports</a>
+    <a href="https://sportlink.in/cricket">Cricket</a>
+    <a href="https://sportlink.in/football">Football</a>
     <a href="#" class="subscribe-mobile">Watch Free</a>
   </div>
 
@@ -1026,7 +1026,7 @@
       <div class="icon">🏏</div>
       <h2>Match Completed</h2>
       <p>This match has ended. Watch other live matches now!</p>
-      <a href="https://matchdekho.in" class="go-home-btn">Go to Home</a>
+      <a href="https://sportlink.in" class="go-home-btn">Go to Home</a>
     </div>
 
     <div class="player-loader" id="playerLoader"></div>
@@ -1081,9 +1081,9 @@
   <!-- ====== VIDEO INFO ====== -->
   <div class="video-info" id="videoInfo">
     <div class="breadcrumb">
-      <a href="https://matchdekho.in">Home</a>
+      <a href="https://sportlink.in">Home</a>
       <span class="separator">›</span>
-      <a href="https://matchdekho.in/sports">Sports</a>
+      <a href="https://sportlink.in/sports">Sports</a>
       <span class="separator">›</span>
       <a href="#" id="leagueLink">Cricket</a>
       <span class="separator">›</span>
@@ -1219,11 +1219,11 @@
 
         // Category link
         document.getElementById('categoryLink').textContent = match.league || 'Sports';
-        document.getElementById('categoryLink').href = 'https://matchdekho.in/league/' + (match.league ? match.league.toLowerCase().replace(/\s+/g, '-') : 'sports');
+        document.getElementById('categoryLink').href = 'https://sportlink.in/league/' + (match.league ? match.league.toLowerCase().replace(/\s+/g, '-') : 'sports');
 
         // League link
         document.getElementById('leagueLink').textContent = match.sport || 'Sports';
-        document.getElementById('leagueLink').href = 'https://matchdekho.in/sport/' + (match.sport || 'sports');
+        document.getElementById('leagueLink').href = 'https://sportlink.in/sport/' + (match.sport || 'sports');
 
         // ====== RENDER SERVER BUTTONS ======
         const serverGrid = document.getElementById('serverGrid');
@@ -1630,7 +1630,7 @@
         if (navigator.share) {
           navigator.share({
             title: document.getElementById('videoTitle').textContent,
-            text: 'Watch ' + document.getElementById('videoTitle').textContent + ' on matchdekho',
+            text: 'Watch ' + document.getElementById('videoTitle').textContent + ' on Sportlink',
             url: window.location.href,
           }).catch(() => {});
         } else {

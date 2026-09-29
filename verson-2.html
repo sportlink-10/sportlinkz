@@ -23,19 +23,19 @@
 <script>
   // Detect current domain
   const currentDomain = window.location.hostname;
-  const isMatchDekho = currentDomain.includes('matchdekho');
+  const isSportlink = currentDomain.includes('Sportlink');
   const isAllrounderLive = currentDomain.includes('allrounderlive');
   
   // Set site-specific variables
-  const siteName = isMatchDekho ? 'matchdekho' : 'AllrounderLive';
-  const siteTitle = isMatchDekho ? 'matchdekho' : 'AllrounderLive';
-  const siteDescription = isMatchDekho 
-    ? 'Watch live sports streaming, match highlights, and real-time scores on matchdekho. Free access to football, cricket, and all major sports events.'
+  const siteName = isSportlink ? 'Sportlink' : 'AllrounderLive';
+  const siteTitle = isSportlink ? 'Sportlink' : 'AllrounderLive';
+  const siteDescription = isSportlink 
+    ? 'Watch live sports streaming, match highlights, and real-time scores on Sportlink. Free access to football, cricket, and all major sports events.'
     : 'Watch live sports streaming, match highlights, and real-time scores on AllrounderLive. Free access to football, cricket, and all major sports events.';
-  const siteUrl = isMatchDekho ? 'https://matchdekho.in/' : 'https://allrounderlive.in/';
-  const twitterHandle = isMatchDekho ? '@matchdekho' : '@allrounderlive';
-  const siteKeywords = isMatchDekho 
-    ? 'live sports, match streaming, football highlights, cricket live, sports scores, matchdekho, live match, sports streaming'
+  const siteUrl = isSportlink ? 'https://sportlink.in/' : 'https://allrounderlive.in/';
+  const twitterHandle = isSportlink ? '@Sportlink' : '@allrounderlive';
+  const siteKeywords = isSportlink 
+    ? 'live sports, match streaming, football highlights, cricket live, sports scores, Sportlink, live match, sports streaming'
     : 'live sports, match streaming, football highlights, cricket live, sports scores, allrounderlive, live match, sports streaming';
   
   // Update meta tags dynamically
@@ -115,10 +115,10 @@
       "logo": url + "images/logo.png",
       "description": description,
       "sameAs": [
-        "https://twitter.com/" + (name === 'matchdekho' ? 'matchdekho' : 'allrounderlive'),
-        "https://facebook.com/" + (name === 'matchdekho' ? 'matchdekho' : 'allrounderlive'),
-        "https://instagram.com/" + (name === 'matchdekho' ? 'matchdekho' : 'allrounderlive'),
-        "https://youtube.com/" + (name === 'matchdekho' ? 'matchdekho' : 'allrounderlive')
+        "https://twitter.com/" + (name === 'Sportlink' ? 'Sportlink' : 'allrounderlive'),
+        "https://facebook.com/" + (name === 'Sportlink' ? 'Sportlink' : 'allrounderlive'),
+        "https://instagram.com/" + (name === 'Sportlink' ? 'Sportlink' : 'allrounderlive'),
+        "https://youtube.com/" + (name === 'Sportlink' ? 'Sportlink' : 'allrounderlive')
       ]
     };
     
@@ -149,48 +149,48 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 <!-- Primary Meta Tags -->
-<title>matchdekho - Live Sports Streaming, Match Highlights & Scores</title>
-<meta name="description" content="Watch live sports streaming, match highlights, and real-time scores on matchdekho. Free access to football, cricket, and all major sports events." />
-<meta name="keywords" content="live sports, match streaming, football highlights, cricket live, sports scores, matchdekho, live match, sports streaming" />
-<link rel="canonical" href="https://matchdekho.in/" />
+<title>Sportlink - Live Sports Streaming, Match Highlights & Scores</title>
+<meta name="description" content="Watch live sports streaming, match highlights, and real-time scores on Sportlink. Free access to football, cricket, and all major sports events." />
+<meta name="keywords" content="live sports, match streaming, football highlights, cricket live, sports scores, Sportlink, live match, sports streaming" />
+<link rel="canonical" href="https://sportlink.in/" />
 
 <!-- Open Graph (OG) Tags -->
-<meta property="og:title" content="matchdekho - Live Sports Streaming & Match Highlights" />
+<meta property="og:title" content="Sportlink - Live Sports Streaming & Match Highlights" />
 <meta property="og:description" content="Watch live sports, match highlights, and real-time scores. Free streaming for football, cricket, and all major tournaments." />
-<meta property="og:url" content="https://matchdekho.in/" />
+<meta property="og:url" content="https://sportlink.in/" />
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="matchdekho" />
-<meta property="og:image" content="https://matchdekho.in/images/og-image.jpg" />
+<meta property="og:site_name" content="Sportlink" />
+<meta property="og:image" content="https://sportlink.in/images/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:locale" content="en_IN" />
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="matchdekho - Live Sports Streaming & Match Highlights" />
+<meta name="twitter:title" content="Sportlink - Live Sports Streaming & Match Highlights" />
 <meta name="twitter:description" content="Watch live sports, match highlights, and real-time scores. Free streaming for football, cricket, and all major tournaments." />
-<meta name="twitter:image" content="https://matchdekho.in/images/og-image.jpg" />
-<meta name="twitter:site" content="@matchdekho" />
-<meta name="twitter:creator" content="@matchdekho" />
+<meta name="twitter:image" content="https://sportlink.in/images/og-image.jpg" />
+<meta name="twitter:site" content="@Sportlink" />
+<meta name="twitter:creator" content="@Sportlink" />
 
 <!-- Additional SEO Tags -->
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
 <meta name="googlebot" content="index, follow" />
 <meta name="bingbot" content="index, follow" />
-<link rel="alternate" hreflang="en" href="https://matchdekho.in/" />
-<link rel="alternate" hreflang="en-IN" href="https://matchdekho.in/" />
+<link rel="alternate" hreflang="en" href="https://sportlink.in/" />
+<link rel="alternate" hreflang="en-IN" href="https://sportlink.in/" />
 
 <!-- ====== SCHEMA MARKUP (JSON-LD) - Will be updated by JavaScript ====== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "matchdekho",
-  "url": "https://matchdekho.in/",
+  "name": "Sportlink",
+  "url": "https://sportlink.in/",
   "description": "Live sports streaming, match highlights, and real-time scores for football, cricket, and all major sports events.",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://matchdekho.in/search?q={search_term_string}",
+    "target": "https://sportlink.in/search?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
@@ -200,15 +200,15 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "matchdekho",
-  "url": "https://matchdekho.in/",
-  "logo": "https://matchdekho.in/images/logo.png",
+  "name": "Sportlink",
+  "url": "https://sportlink.in/",
+  "logo": "https://sportlink.in/images/logo.png",
   "description": "Live sports streaming platform offering match highlights and real-time scores.",
   "sameAs": [
-    "https://twitter.com/matchdekho",
-    "https://facebook.com/matchdekho",
-    "https://instagram.com/matchdekho",
-    "https://youtube.com/matchdekho"
+    "https://twitter.com/Sportlink",
+    "https://facebook.com/Sportlink",
+    "https://instagram.com/Sportlink",
+    "https://youtube.com/Sportlink"
   ]
 }
 </script>
@@ -217,9 +217,9 @@
 {
   "@context": "https://schema.org",
   "@type": "BroadcastChannel",
-  "name": "matchdekho Sports Channel",
+  "name": "Sportlink Sports Channel",
   "description": "Live sports streaming channel for football, cricket, and major tournaments.",
-  "broadcastDisplayName": "matchdekho",
+  "broadcastDisplayName": "Sportlink",
   "genre": "Sports",
   "inLanguage": "en"
 }
@@ -2052,8 +2052,8 @@
     </button>
 
     <!-- Logo - Centered on Mobile/Vertical -->
-    <a href="#" class="logo" aria-label="matchdekho home">
-      <span class="match">match</span><span class="dekho">dekho</span>
+    <a href="#" class="logo" aria-label="Sportlink home">
+      <span class="sport">Sport</span><span class="link">link</span>
     </a>
 
     <!-- Desktop Navigation -->
@@ -2097,7 +2097,7 @@
         />
         <img 
           src="https://images.slivcdn.com/videoasset_images/manage_file/1000022076/1786463018166303_India_Tour_of_Sri_Lanka_2026_GOB_masthead_large_v3_3200x1800_1.jpg?h=auto&w=1712&q=high" 
-          alt="matchdekho poster"
+          alt="Sportlink poster"
           class="poster-image"
           loading="lazy"
         />
@@ -2179,7 +2179,7 @@
         />
         <img 
           src="https://img10.hotstar.com/image/upload/f_auto,q_90/sources/r1/cms/prod/3889/1787317503889-i" 
-          alt="matchdekho poster"
+          alt="Sportlink poster"
           class="poster-image"
           loading="lazy"
         />

@@ -1,9 +1,9 @@
-// ============================================================
+﻿// ============================================================
 // world-sports.js - Fetch & Render World Sports
 // ============================================================
 
 (function() {
-  const API_URL = 'https://matchdekho.in/api/world-sports.json';
+  const API_URL = 'https://sportlink.in/api/world-sports.json';
   const track = document.getElementById('worldSportsTrack');
   const arrowLeft = document.getElementById('worldSportsArrowLeft');
   const arrowRight = document.getElementById('worldSportsArrowRight');
