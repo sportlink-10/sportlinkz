@@ -21,8 +21,6 @@
         (document.head || document.documentElement).appendChild(s);
       }
 
-      /* Some CPM/popunder scripts want a real user gesture. Fire the
-         loader on the first interaction anywhere on the page. */
       var fired = false;
       function trigger() {
         if (fired) return;
@@ -37,217 +35,207 @@
       window.addEventListener('touchstart', trigger, true);
       window.addEventListener('scroll', trigger, true);
 
-      /* Fallback: still load after 3s even if nobody interacted */
       setTimeout(loadAdScript, 3000);
     })();
   </script>
 
   <!-- ====== FONTS ====== -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<!-- Willow Live Styles -->
-<link rel="stylesheet" href="willow-live.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Willow Live Styles -->
+  <link rel="stylesheet" href="willow-live.css">
   <link rel="stylesheet" href="world-sports.css" />
-  
-  
   <link rel="stylesheet" href="fancode.css">
-<!-- ====== PERFORMANCE & SECURITY ====== -->
-<link rel="dns-prefetch" href="https://img.tod.tv" />
-<link rel="dns-prefetch" href="https://flagpedia.net" />
-<link rel="dns-prefetch" href="//pl31358401.profitableratecpmnetwork.com" />
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-<!-- This script detects which domain is being used and sets appropriate meta tags -->
-<script>
-  const siteName = 'SPORTLINK';
-  const siteTitle = 'SPORTLINK';
-  const siteDescription = 'Watch live sports streaming, match highlights, and real-time scores on SPORTLINK. Free access to football, cricket, and all major sports events.';
-  const siteUrl = 'https://sportlinkzz.pages.dev/';
-  const twitterHandle = '@sportlink';
-  const siteKeywords = 'live sports, match streaming, football highlights, cricket live, sports scores, sportlink, live match, sports streaming';
 
-  document.addEventListener('DOMContentLoaded', function() {
-    document.title = `${siteTitle} - Live Sports Streaming, Match Highlights & Scores`;
+  <!-- ====== PERFORMANCE & SECURITY ====== -->
+  <link rel="dns-prefetch" href="https://img.tod.tv" />
+  <link rel="dns-prefetch" href="https://flagpedia.net" />
+  <link rel="dns-prefetch" href="//pl31358401.profitableratecpmnetwork.com" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.content = siteDescription;
+  <!-- This script detects which domain is being used and sets appropriate meta tags -->
+  <script>
+    const siteName = 'SPORTLINK';
+    const siteTitle = 'SPORTLINK';
+    const siteDescription = 'Watch live sports streaming, match highlights, and real-time scores on SPORTLINK. Free access to football, cricket, and all major sports events.';
+    const siteUrl = 'https://sportlinkzz.pages.dev/';
+    const twitterHandle = '@sportlink';
+    const siteKeywords = 'live sports, match streaming, football highlights, cricket live, sports scores, sportlink, live match, sports streaming';
 
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) metaKeywords.content = siteKeywords;
+    document.addEventListener('DOMContentLoaded', function() {
+      document.title = `${siteTitle} - Live Sports Streaming, Match Highlights & Scores`;
 
-    const canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) canonical.href = siteUrl;
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.content = siteDescription;
 
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.content = `${siteTitle} - Live Sports Streaming & Match Highlights`;
+      const metaKeywords = document.querySelector('meta[name="keywords"]');
+      if (metaKeywords) metaKeywords.content = siteKeywords;
 
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.content = siteDescription;
+      const canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.href = siteUrl;
 
-    const ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) ogUrl.content = siteUrl;
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.content = `${siteTitle} - Live Sports Streaming & Match Highlights`;
 
-    const ogSiteName = document.querySelector('meta[property="og:site_name"]');
-    if (ogSiteName) ogSiteName.content = siteTitle;
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.content = siteDescription;
 
-    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twitterTitle) twitterTitle.content = `${siteTitle} - Live Sports Streaming & Match Highlights`;
+      const ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.content = siteUrl;
 
-    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-    if (twitterDesc) twitterDesc.content = siteDescription;
+      const ogSiteName = document.querySelector('meta[property="og:site_name"]');
+      if (ogSiteName) ogSiteName.content = siteTitle;
 
-    const twitterSite = document.querySelector('meta[name="twitter:site"]');
-    if (twitterSite) twitterSite.content = twitterHandle;
+      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twitterTitle) twitterTitle.content = `${siteTitle} - Live Sports Streaming & Match Highlights`;
 
-    const twitterCreator = document.querySelector('meta[name="twitter:creator"]');
-    if (twitterCreator) twitterCreator.content = twitterHandle;
+      const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twitterDesc) twitterDesc.content = siteDescription;
 
-    updateSchemas();
-  });
+      const twitterSite = document.querySelector('meta[name="twitter:site"]');
+      if (twitterSite) twitterSite.content = twitterHandle;
 
-  function updateSchemas() {
-    const websiteSchema = {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "SPORTLINK",
-      "url": "https://sportlinkzz.pages.dev/",
-      "description": "Live sports streaming, match highlights, and real-time scores for football, cricket, and all major sports events.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://sportlink.in/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
+      const twitterCreator = document.querySelector('meta[name="twitter:creator"]');
+      if (twitterCreator) twitterCreator.content = twitterHandle;
+
+      updateSchemas();
+    });
+
+    function updateSchemas() {
+      const websiteSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "SPORTLINK",
+        "url": "https://sportlinkzz.pages.dev/",
+        "description": "Live sports streaming, match highlights, and real-time scores for football, cricket, and all major sports events.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://sportlink.in/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      };
+      const orgSchema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SPORTLINK",
+        "url": "https://sportlinkzz.pages.dev/",
+        "logo": "https://sportlink.in/images/logo.png",
+        "description": "Live sports streaming platform offering match highlights and real-time scores.",
+        "sameAs": [
+          "https://twitter.com/sportlink",
+          "https://facebook.com/sportlink",
+          "https://instagram.com/sportlink",
+          "https://youtube.com/sportlink"
+        ]
+      };
+      const channelSchema = {
+        "@context": "https://schema.org",
+        "@type": "BroadcastChannel",
+        "name": "SPORTLINK Sports Channel",
+        "description": "Live sports streaming channel for football, cricket, and major tournaments.",
+        "broadcastDisplayName": "SPORTLINK",
+        "genre": "Sports",
+        "inLanguage": "en"
+      };
+      const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
+      if (existingScripts.length >= 3) {
+        existingScripts[0].textContent = JSON.stringify(websiteSchema);
+        existingScripts[1].textContent = JSON.stringify(orgSchema);
+        existingScripts[2].textContent = JSON.stringify(channelSchema);
       }
-    };
-    const orgSchema = {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "SPORTLINK",
-      "url": "https://sportlinkzz.pages.dev/",
-      "logo": "https://sportlink.in/images/logo.png",
-      "description": "Live sports streaming platform offering match highlights and real-time scores.",
-      "sameAs": [
-        "https://twitter.com/sportlink",
-        "https://facebook.com/sportlink",
-        "https://instagram.com/sportlink",
-        "https://youtube.com/sportlink"
-      ]
-    };
-    const channelSchema = {
-      "@context": "https://schema.org",
-      "@type": "BroadcastChannel",
-      "name": "SPORTLINK Sports Channel",
-      "description": "Live sports streaming channel for football, cricket, and major tournaments.",
-      "broadcastDisplayName": "SPORTLINK",
-      "genre": "Sports",
-      "inLanguage": "en"
-    };
-    const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
-    if (existingScripts.length >= 3) {
-      existingScripts[0].textContent = JSON.stringify(websiteSchema);
-      existingScripts[1].textContent = JSON.stringify(orgSchema);
-      existingScripts[2].textContent = JSON.stringify(channelSchema);
+    }
+  </script>
+
+  <!-- ====== STATIC META TAGS (will be updated by JavaScript) ====== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Sportlink - Live Sports Streaming, Match Highlights & Scores</title>
+  <meta name="description" content="Watch live sports streaming, match highlights, and real-time scores on Sportlink. Free access to football, cricket, and all major sports events." />
+  <meta name="keywords" content="live sports, match streaming, football highlights, cricket live, sports scores, Sportlink, live match, sports streaming" />
+  <link rel="canonical" href="https://sportlink.in/" />
+
+  <!-- Open Graph (OG) Tags -->
+  <meta property="og:title" content="Sportlink - Live Sports Streaming & Match Highlights" />
+  <meta property="og:description" content="Watch live sports, match highlights, and real-time scores. Free streaming for football, cricket, and all major tournaments." />
+  <meta property="og:url" content="https://sportlink.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sportlink" />
+  <meta property="og:image" content="https://sportlink.in/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sportlink - Live Sports Streaming & Match Highlights" />
+  <meta name="twitter:description" content="Watch live sports, match highlights, and real-time scores. Free streaming for football, cricket, and all major tournaments." />
+  <meta name="twitter:image" content="https://sportlink.in/images/og-image.jpg" />
+  <meta name="twitter:site" content="@Sportlink" />
+  <meta name="twitter:creator" content="@Sportlink" />
+
+  <!-- Additional SEO Tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="bingbot" content="index, follow" />
+  <link rel="alternate" hreflang="en" href="https://sportlinkzz.pages.dev/" />
+  <link rel="alternate" hreflang="en-IN" href="https://sportlinkzz.pages.dev/" />
+
+  <!-- ====== SCHEMA MARKUP (JSON-LD) ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sportlink",
+    "url": "https://sportlink.in/",
+    "description": "Live sports streaming, match highlights, and real-time scores for football, cricket, and all major sports events.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://sportlink.in/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
     }
   }
-</script>
+  </script>
 
-<!-- ====== STATIC META TAGS (will be updated by JavaScript) ====== -->
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-<!-- Primary Meta Tags -->
-<title>Sportlink - Live Sports Streaming, Match Highlights & Scores</title>
-<meta name="description" content="Watch live sports streaming, match highlights, and real-time scores on Sportlink. Free access to football, cricket, and all major sports events." />
-<meta name="keywords" content="live sports, match streaming, football highlights, cricket live, sports scores, Sportlink, live match, sports streaming" />
-<link rel="canonical" href="https://sportlink.in/" />
-
-<!-- Open Graph (OG) Tags -->
-<meta property="og:title" content="Sportlink - Live Sports Streaming & Match Highlights" />
-<meta property="og:description" content="Watch live sports, match highlights, and real-time scores. Free streaming for football, cricket, and all major tournaments." />
-<meta property="og:url" content="https://sportlink.in/" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Sportlink" />
-<meta property="og:image" content="https://sportlink.in/images/og-image.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:locale" content="en_IN" />
-
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Sportlink - Live Sports Streaming & Match Highlights" />
-<meta name="twitter:description" content="Watch live sports, match highlights, and real-time scores. Free streaming for football, cricket, and all major tournaments." />
-<meta name="twitter:image" content="https://sportlink.in/images/og-image.jpg" />
-<meta name="twitter:site" content="@Sportlink" />
-<meta name="twitter:creator" content="@Sportlink" />
-
-<!-- Additional SEO Tags -->
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-<meta name="googlebot" content="index, follow" />
-<meta name="bingbot" content="index, follow" />
-<link rel="alternate" hreflang="en" href="https://sportlinkzz.pages.dev/" />
-<link rel="alternate" hreflang="en-IN" href="https://sportlinkzz.pages.dev/" />
-
-<!-- ====== SCHEMA MARKUP (JSON-LD) - Will be updated by JavaScript ====== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Sportlink",
-  "url": "https://sportlink.in/",
-  "description": "Live sports streaming, match highlights, and real-time scores for football, cricket, and all major sports events.",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://sportlink.in/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sportlink",
+    "url": "https://sportlink.in/",
+    "logo": "https://sportlink.in/images/logo.png",
+    "description": "Live sports streaming platform offering match highlights and real-time scores.",
+    "sameAs": [
+      "https://twitter.com/Sportlink",
+      "https://facebook.com/Sportlink",
+      "https://instagram.com/Sportlink",
+      "https://youtube.com/Sportlink"
+    ]
   }
-}
-</script>
+  </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Sportlink",
-  "url": "https://sportlink.in/",
-  "logo": "https://sportlink.in/images/logo.png",
-  "description": "Live sports streaming platform offering match highlights and real-time scores.",
-  "sameAs": [
-    "https://twitter.com/Sportlink",
-    "https://facebook.com/Sportlink",
-    "https://instagram.com/Sportlink",
-    "https://youtube.com/Sportlink"
-  ]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BroadcastChannel",
+    "name": "Sportlink Sports Channel",
+    "description": "Live sports streaming channel for football, cricket, and major tournaments.",
+    "broadcastDisplayName": "Sportlink",
+    "genre": "Sports",
+    "inLanguage": "en"
+  }
+  </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BroadcastChannel",
-  "name": "Sportlink Sports Channel",
-  "description": "Live sports streaming channel for football, cricket, and major tournaments.",
-  "broadcastDisplayName": "Sportlink",
-  "genre": "Sports",
-  "inLanguage": "en"
-}
-</script>
+  <!-- ====== VERIFICATION META TAGS ====== -->
+  <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
+  <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" />
+  <meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE" />
 
-<!-- ====== VERIFICATION META TAGS ====== -->
-<meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
-<meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE" />
-<meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE" />
-
-<!-- ====== PERFORMANCE & SECURITY ====== -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="dns-prefetch" href="https://img.tod.tv" />
-<link rel="dns-prefetch" href="https://flagpedia.net" />
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-
-<meta name="theme-color" content="#060910" />
-
-
+  <meta name="theme-color" content="#060910" />
 
   <style>
     /* ---------- RESET & BASE ---------- */
@@ -267,8 +255,8 @@
       --accent-dark: #00b8d4;
       --accent-deep: #0093b3;
 
-      --golden: #00e5ff;        /* legacy alias -> accent */
-      --golden-dark: #00b8d4;   /* legacy alias -> accent dark */
+      --golden: #00e5ff;
+      --golden-dark: #00b8d4;
 
       --green: #7dffb3;
       --white: #ffffff;
@@ -306,7 +294,6 @@
       margin: 0 auto;
     }
 
-    /* 728x90 / responsive leaderboard */
     .ad-slot--leaderboard {
       min-height: 90px;
       max-width: 970px;
@@ -314,14 +301,12 @@
       padding: 0 clamp(0.5rem, 2vw, 1rem);
     }
 
-    /* 300x250 / mobile rectangle */
     .ad-slot--rect {
       min-height: 250px;
       max-width: 336px;
       margin: clamp(1rem, 2.5vw, 2rem) auto;
     }
 
-    /* in-feed slot */
     .ad-slot--inline {
       min-height: 100px;
       margin: clamp(0.6rem, 1.5vw, 1.2rem) clamp(1rem, 5vw, 3rem);
@@ -430,7 +415,7 @@
       background: var(--accent-dark);
     }
 
-    /* ---------- HAMBURGER MENU (MOBILE ONLY) ---------- */
+    /* ---------- HAMBURGER MENU ---------- */
     .hamburger {
       display: none;
       flex-direction: column;
@@ -507,7 +492,7 @@
       100% { opacity: 1; }
     }
 
-    /* ---------- POSTER WRAPPER - CLICKABLE / SLIDER ---------- */
+    /* ---------- POSTER WRAPPER ---------- */
     .poster-wrapper {
       position: relative;
       width: 100%;
@@ -612,7 +597,7 @@
       z-index: 2;
     }
 
-    /* ---------- SLIDER PROGRESS BAR (TOP) ---------- */
+    /* ---------- SLIDER PROGRESS BAR ---------- */
     .slider-progress {
       position: absolute;
       top: clamp(4.5rem, 9vh, 6.5rem);
@@ -1139,10 +1124,7 @@
       background: var(--bg-primary);
     }
 
-    /* ============================================================ */
-    /* ========== RESPONSIVE ========== */
-    /* ============================================================ */
-
+    /* ---------- RESPONSIVE ---------- */
     @media (orientation: portrait) and (max-width: 768px) {
       header {
         padding: clamp(0.3rem, 1.2vw, 0.5rem) clamp(0.8rem, 3vw, 1.2rem);
@@ -1178,18 +1160,6 @@
         height: clamp(2.5px, 0.3vw, 3px);
       }
 
-      .poster-section {
-        min-height: 100vh;
-        min-height: 100dvh;
-      }
-
-      .poster-image {
-        min-height: 100vh;
-        min-height: 100dvh;
-        object-fit: cover;
-        width: 100%;
-      }
-
       .gradient-left {
         display: none;
       }
@@ -1204,58 +1174,9 @@
         max-width: clamp(300px, 80vw, 450px);
       }
 
-      .match-title {
-        font-size: clamp(0.6rem, 1.2vw, 0.8rem);
-      }
-
-      .team-flag {
-        width: clamp(48px, 6.5vw, 65px);
-        height: clamp(34px, 4.5vw, 45px);
-      }
-
-      .team-name {
-        font-size: clamp(0.65rem, 1.2vw, 0.85rem);
-      }
-
-      .vs-score {
-        font-size: clamp(1.8rem, 4.5vw, 2.5rem);
-        margin-top: clamp(0.25rem, 0.6vw, 0.6rem);
-      }
-
-      .match-info .tag {
-        font-size: clamp(0.55rem, 1vw, 0.75rem);
-      }
-
-      .match-info .date,
-      .match-info .time,
-      .match-info .venue {
-        font-size: clamp(0.55rem, 1vw, 0.75rem);
-      }
-
-      .badge {
-        font-size: clamp(0.45rem, 0.8vw, 0.6rem);
-        padding: clamp(0.15rem, 0.4vw, 0.3rem) clamp(0.4rem, 0.8vw, 0.7rem);
-        border-radius: clamp(10px, 1.8vw, 14px);
-      }
-
       .watch-btn {
         padding: clamp(0.7rem, 2vw, 1rem) clamp(1.2rem, 3.5vw, 2rem);
         font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-        border-width: clamp(2px, 0.3vw, 3px);
-        gap: clamp(0.4rem, 0.8vw, 0.6rem);
-        border-radius: 0 clamp(30px, 5vw, 50px) clamp(30px, 5vw, 50px) 0;
-        border-left: clamp(2px, 0.3vw, 3px) solid #060910;
-        width: auto;
-      }
-
-      .watch-btn .icon {
-        font-size: clamp(0.9rem, 2vw, 1.3rem);
-      }
-
-      .btn-mytod {
-        padding: clamp(0.5rem, 1.2vw, 0.7rem) clamp(0.8rem, 1.5vw, 1.2rem);
-        font-size: clamp(0.7rem, 1.5vw, 0.9rem);
-        width: auto;
       }
 
       .ad-slot--leaderboard {
@@ -1270,16 +1191,6 @@
 
       .logo {
         font-size: clamp(1rem, 4vw, 1.5rem);
-      }
-
-      .hamburger {
-        padding: clamp(3px, 0.4vw, 5px);
-        gap: clamp(3px, 0.4vw, 4px);
-      }
-
-      .hamburger span {
-        width: clamp(18px, 2.5vw, 22px);
-        height: clamp(2px, 0.25vw, 2.5px);
       }
 
       .match-details {
@@ -1314,12 +1225,10 @@
       .header-nav { display: flex; }
     }
 
-    /* ---------- RESPONSIVE CLOUDS ---------- */
     @media (max-width: 768px) {
       .cloud-1 { width: 85vw; height: 35vh; }
     }
 
-    /* ---------- REDUCED MOTION ---------- */
     @media (prefers-reduced-motion: reduce) {
       *,
       *::before,
@@ -1446,7 +1355,6 @@
     <!-- SLIDE 1 -->
     <section class="poster-section active" data-slide="0">
 
-      <!-- Poster Image -->
       <picture>
         <source
           media="(orientation: portrait) and (max-width: 768px)"
@@ -1458,7 +1366,7 @@
         />
         <img
           src="https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17901552361020x576.jpg"
-          alt="Sportlink poster"
+          alt="India vs West Indies poster"
           class="poster-image"
           loading="lazy"
         />
@@ -1466,7 +1374,6 @@
       <div class="gradient-left"></div>
       <div class="gradient-overlay"></div>
 
-      <!-- ====== MATCH DETAILS ====== -->
       <div class="match-details">
         <div class="match-title">IND VS WI ODI SERIES, 2026</div>
 
@@ -1474,7 +1381,7 @@
           <div class="team">
             <img
               src="https://flagpedia.net/data/flags/w1160/in.webp"
-              alt="india"
+              alt="India"
               class="team-flag"
               loading="lazy"
             />
@@ -1484,11 +1391,11 @@
           <div class="team">
             <img
               src="https://flagpedia.net/data/flags/w1160/wi.webp"
-              alt="WEST INDIES"
+              alt="West Indies"
               class="team-flag"
               loading="lazy"
             />
-            <span class="team-name">France</span>
+            <span class="team-name">West Indies</span>
           </div>
         </div>
 
@@ -1503,7 +1410,7 @@
         </div>
 
         <div class="badges">
-          <span class="badge badge-fulltime">Odi</span>
+          <span class="badge badge-fulltime">ODI</span>
           <span class="badge badge-4k">4K</span>
           <span class="badge badge-hdr">HDR</span>
         </div>
@@ -1524,15 +1431,15 @@
       <picture>
         <source
           media="(orientation: portrait) and (max-width: 768px)"
-          srcset="https://ik.imagekit.io/hca68wjbj/ChatGPT%20Image%20Sep%2028,%202026,%2009_20_43%20AM.png"
+          srcset="https://images.slivcdn.com/videoasset_images/manage_file/1000008830/1758239474627224_acc25_Super_Four_IND_vs_SL_19sep_tv_bg.jpg?w=1366&q=high"
         />
         <source
           media="(min-width: 769px)"
-          srcset="https://images.slivcdn.com/videoasset_images/manage_file/1000025071/1790513676229545_AG26_India-vs-Afghanistan_live_masthead_large_v3.jpg?h=auto&w=1712&q=high"
+          srcset="https://images.slivcdn.com/videoasset_images/manage_file/1000008830/1758239474627224_acc25_Super_Four_IND_vs_SL_19sep_tv_bg.jpg?w=1366&q=high"
         />
         <img
-          src="https://images.slivcdn.com/videoasset_images/manage_file/1000025071/1790513676229545_AG26_India-vs-Afghanistan_live_masthead_large_v3.jpg?h=auto&w=1712&q=high"
-          alt="Sportlink poster"
+          src="https://images.slivcdn.com/videoasset_images/manage_file/1000008830/1758239474627224_acc25_Super_Four_IND_vs_SL_19sep_tv_bg.jpg?w=1366&q=high"
+          alt="India vs Sri Lanka poster"
           class="poster-image"
           loading="lazy"
         />
@@ -1547,7 +1454,7 @@
           <div class="team">
             <img
               src="https://flagpedia.net/data/flags/w1160/in.webp"
-              alt="india"
+              alt="India"
               class="team-flag"
               loading="lazy"
             />
@@ -1556,21 +1463,21 @@
           <span class="vs-score"> VS </span>
           <div class="team">
             <img
-              src="https://flagpedia.net/data/flags/w1160/af.webp"
-              alt="Afghanistan"
+              src="https://flagpedia.net/data/flags/w1160/lk.webp"
+              alt="Sri Lanka"
               class="team-flag"
               loading="lazy"
             />
-            <span class="team-name">Afghanistan</span>
+            <span class="team-name">Sri Lanka</span>
           </div>
         </div>
 
         <div class="match-info">
-          <span class="tag">Tomorrow</span>
+          <span class="tag">Upcoming</span>
           <span class="separator">•</span>
-          <span class="date">Sep 28th</span>
+          <span class="date">1 Oct</span>
           <span class="separator">•</span>
-          <span class="time">10:30</span>
+          <span class="time">10:00 AM</span>
           <span class="separator">•</span>
           <span class="venue">Oshma Stadium</span>
         </div>
@@ -1625,7 +1532,7 @@
   <!-- ====== MAIN CONTENT ====== -->
   <main role="main">
 
-    <!-- ====== AD SLOT: Leaderboard (top of main) ====== -->
+    <!-- ====== AD SLOT: Leaderboard ====== -->
     <div class="ad-slot ad-slot--leaderboard" id="adSlotTop" aria-label="Advertisement">
       <div class="ad-slot__inner">
         <span class="ad-slot__label">Advertisement</span>
@@ -1688,7 +1595,7 @@
       </div>
     </section>
 
-    <!-- ====== AD SLOT: Bottom rectangle (300x250) ====== -->
+    <!-- ====== AD SLOT: Bottom rectangle ====== -->
     <div class="ad-slot ad-slot--rect" id="adSlotBottom" aria-label="Advertisement">
       <div class="ad-slot__inner">
         <span class="ad-slot__label">Advertisement</span>
@@ -1863,15 +1770,11 @@
     })();
 
     // ====== AD SLOT FILLER ======
-    /* Paints visible ad containers with lightweight in-house banners.
-       When your ad network injects a script into these divs, replace
-       the placeholder content with the network's ad tag. */
     (function () {
       function paintAdSlots() {
         var slots = document.querySelectorAll('.ad-slot__inner');
         slots.forEach(function (inner) {
-          if (inner.querySelector('iframe, ins, img')) return; // already filled
-          // Generic in-house promo block — swap this for your network tag.
+          if (inner.querySelector('iframe, ins, img')) return;
           inner.innerHTML =
             '<div style="width:100%;display:flex;align-items:center;justify-content:center;' +
             'padding:12px;color:#00e5ff;font-weight:700;font-size:0.85rem;' +
