@@ -215,7 +215,7 @@
 
 
 
-<meta name="theme-color" content="#0b0d0f" />
+<meta name="theme-color" content="#060910" />
 
 
 
@@ -229,12 +229,22 @@
       box-sizing: border-box;
     }
 
+    /* ---------- UI COLOR SYSTEM ----------
+       Accent = electric cyan. The legacy variable names --golden /
+       --golden-dark are kept (so willow-live.css, fancode.css and
+       world-sports.css keep working) but now hold the cyan values. */
     :root {
-      --bg-primary: #0b0d0f;
+      --bg-primary: #060910;
+      --bg-elevated: #0b1018;
+      --accent: #00e5ff;
+      --accent-dark: #00b8d4;
+      --accent-deep: #0093b3;
+
+      --golden: #00e5ff;        /* legacy alias -> accent */
+      --golden-dark: #00b8d4;   /* legacy alias -> accent dark */
+
       --green: #7dffb3;
       --white: #ffffff;
-      --golden: #f5c518;
-      --golden-dark: #d4a800;
     }
 
     html {
@@ -291,8 +301,8 @@
     }
 
     .logo .sport {
-      color: var(--golden);
-      text-shadow: 0 0 clamp(15px, 3vw, 40px) rgba(245, 197, 24, 0.3);
+      color: var(--accent);
+      text-shadow: 0 0 clamp(15px, 3vw, 40px) rgba(0, 229, 255, 0.35);
       font-weight: 800;
     }
 
@@ -330,8 +340,8 @@
     }
 
     .header-nav .subscribe {
-      background: var(--golden);
-      color: #0b0d0f;
+      background: var(--accent);
+      color: #060910;
       padding: clamp(0.2rem, 0.5vw, 0.5rem) clamp(0.6rem, 1.5vw, 1.2rem);
       border-radius: clamp(20px, 3vw, 40px);
       font-weight: 700;
@@ -342,7 +352,7 @@
 
     .header-nav .subscribe:hover {
       transform: scale(1.05);
-      background: #e6b800;
+      background: var(--accent-dark);
     }
 
     /* ---------- HAMBURGER MENU (MOBILE ONLY) ---------- */
@@ -388,7 +398,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(11, 13, 15, 0.98);
+      background: rgba(6, 9, 16, 0.98);
       z-index: 999;
       flex-direction: column;
       align-items: center;
@@ -414,12 +424,12 @@
     }
 
     .mobile-menu a:hover {
-      color: var(--golden);
+      color: var(--accent);
     }
 
     .mobile-menu .subscribe-mobile {
-      background: var(--golden);
-      color: #0b0d0f;
+      background: var(--accent);
+      color: #060910;
       padding: clamp(0.6rem, 1.5vw, 1rem) clamp(1.5rem, 4vw, 2.5rem);
       border-radius: clamp(30px, 4vw, 50px);
       font-weight: 700;
@@ -429,7 +439,7 @@
     }
 
     .mobile-menu .subscribe-mobile:hover {
-      background: #e6b800;
+      background: var(--accent-dark);
       transform: scale(1.05);
     }
 
@@ -512,11 +522,11 @@
       width: clamp(35%, 50%, 65%);
       background: linear-gradient(
         to right,
-        #0b0d0f 0%,
-        #0b0d0f 10%,
-        rgba(11, 13, 15, 0.85) 25%,
-        rgba(11, 13, 15, 0.5) 50%,
-        rgba(11, 13, 15, 0.15) 75%,
+        #060910 0%,
+        #060910 10%,
+        rgba(6, 9, 16, 0.85) 25%,
+        rgba(6, 9, 16, 0.5) 50%,
+        rgba(6, 9, 16, 0.15) 75%,
         transparent 100%
       );
       pointer-events: none;
@@ -532,11 +542,11 @@
       height: clamp(18%, 28%, 38%);
       background: linear-gradient(
         to top,
-        #0b0d0f 0%,
-        #0b0d0f 15%,
-        rgba(11, 13, 15, 0.85) 30%,
-        rgba(11, 13, 15, 0.5) 50%,
-        rgba(11, 13, 15, 0.2) 70%,
+        #060910 0%,
+        #060910 15%,
+        rgba(6, 9, 16, 0.85) 30%,
+        rgba(6, 9, 16, 0.5) 50%,
+        rgba(6, 9, 16, 0.2) 70%,
         transparent 100%
       );
       pointer-events: none;
@@ -570,8 +580,9 @@
       left: 0;
       height: 100%;
       width: 0%;
-      background: var(--white);
+      background: var(--accent);
       border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
     }
 
     .progress-fill.filling {
@@ -595,7 +606,7 @@
       width: clamp(34px, 4vw, 52px);
       height: clamp(34px, 4vw, 52px);
       border-radius: 50%;
-      background: rgba(11, 13, 15, 0.4);
+      background: rgba(6, 9, 16, 0.4);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       border: 1px solid rgba(255, 255, 255, 0.15);
@@ -612,8 +623,9 @@
     }
 
     .slider-arrow:hover {
-      background: rgba(11, 13, 15, 0.7);
-      border-color: rgba(255, 255, 255, 0.3);
+      background: rgba(6, 9, 16, 0.7);
+      border-color: rgba(0, 229, 255, 0.5);
+      color: var(--accent);
       transform: translateY(-50%) scale(1.08);
     }
 
@@ -726,7 +738,7 @@
 
     .match-info .tag {
       font-size: clamp(0.6rem, 1vw, 0.85rem);
-      color: rgba(255, 255, 255, 0.5);
+      color: var(--accent);
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-weight: 600;
@@ -769,9 +781,9 @@
     }
 
     .badge-fulltime {
-      background: rgba(245, 197, 24, 0.15);
-      color: var(--golden);
-      border-color: rgba(245, 197, 24, 0.2);
+      background: rgba(0, 229, 255, 0.12);
+      color: var(--accent);
+      border-color: rgba(0, 229, 255, 0.25);
     }
 
     .badge-4k {
@@ -808,12 +820,12 @@
       align-items: center;
       gap: clamp(0.4rem, 0.8vw, 0.8rem);
       padding: clamp(0.6rem, 1.2vw, 1.2rem) clamp(1.2rem, 3vw, 3rem);
-      background: linear-gradient(135deg, #f5c518 0%, #e6b800 50%, #d4a800 100%);
-      color: #0b0d0f;
+      background: linear-gradient(135deg, #00e5ff 0%, #00b8d4 50%, #0093b3 100%);
+      color: #060910;
       font-size: clamp(0.85rem, 1.6vw, 1.3rem);
       font-weight: 700;
       font-family: 'Inter', system-ui, sans-serif;
-      border: clamp(2px, 0.25vw, 4px) solid #0b0d0f;
+      border: clamp(2px, 0.25vw, 4px) solid #060910;
       border-radius: 0 clamp(30px, 4vw, 50px) clamp(30px, 4vw, 50px) 0;
       cursor: pointer;
       text-decoration: none;
@@ -821,12 +833,12 @@
       text-transform: uppercase;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       box-shadow: 
-        0 clamp(3px, 0.8vw, 10px) clamp(15px, 2.5vw, 30px) rgba(245, 197, 24, 0.25),
+        0 clamp(3px, 0.8vw, 10px) clamp(15px, 2.5vw, 30px) rgba(0, 229, 255, 0.25),
         0 clamp(2px, 0.4vw, 5px) clamp(8px, 1.5vw, 20px) rgba(0, 0, 0, 0.3),
         inset 0 clamp(1px, 0.2vw, 2px) clamp(2px, 0.4vw, 5px) rgba(255, 255, 255, 0.3);
       position: relative;
       overflow: hidden;
-      border-left: clamp(2px, 0.25vw, 4px) solid #0b0d0f;
+      border-left: clamp(2px, 0.25vw, 4px) solid #060910;
       text-shadow: none;
     }
 
@@ -850,7 +862,7 @@
     .watch-btn:hover {
       transform: scale(1.05) translateY(clamp(-2px, -0.3vh, -4px));
       box-shadow: 
-        0 clamp(6px, 1.2vw, 16px) clamp(25px, 4vw, 50px) rgba(245, 197, 24, 0.35),
+        0 clamp(6px, 1.2vw, 16px) clamp(25px, 4vw, 50px) rgba(0, 229, 255, 0.4),
         0 clamp(3px, 0.6vw, 8px) clamp(12px, 2.5vw, 30px) rgba(0, 0, 0, 0.4),
         inset 0 clamp(1px, 0.2vw, 2px) clamp(2px, 0.4vw, 5px) rgba(255, 255, 255, 0.4);
     }
@@ -890,8 +902,9 @@
     }
 
     .btn-mytod:hover {
-      background: rgba(255, 255, 255, 0.05);
-      border-color: rgba(255, 255, 255, 0.3);
+      background: rgba(0, 229, 255, 0.08);
+      border-color: rgba(0, 229, 255, 0.4);
+      color: var(--accent);
     }
 
     /* ---------- ANIMATIONS ---------- */
@@ -924,7 +937,7 @@
       height: min(50vh, 400px);
       background: radial-gradient(
         ellipse at center,
-        rgba(125, 255, 179, 0.05) 0%,
+        rgba(0, 229, 255, 0.06) 0%,
         rgba(255, 255, 255, 0.025) 40%,
         transparent 70%
       );
@@ -938,7 +951,7 @@
       height: clamp(100px, 18vh, 250px);
       background: radial-gradient(
         ellipse at center,
-        rgba(125, 255, 179, 0.035) 0%,
+        rgba(0, 229, 255, 0.045) 0%,
         rgba(255, 255, 255, 0.02) 30%,
         transparent 70%
       );
@@ -952,7 +965,7 @@
       height: clamp(120px, 20vh, 280px);
       background: radial-gradient(
         ellipse at center,
-        rgba(125, 255, 179, 0.03) 0%,
+        rgba(0, 229, 255, 0.04) 0%,
         rgba(255, 255, 255, 0.015) 30%,
         transparent 70%
       );
@@ -966,7 +979,7 @@
       height: clamp(70px, 10vh, 150px);
       background: radial-gradient(
         ellipse at center,
-        rgba(125, 255, 179, 0.02) 0%,
+        rgba(0, 229, 255, 0.03) 0%,
         rgba(255, 255, 255, 0.01) 30%,
         transparent 70%
       );
@@ -1084,7 +1097,7 @@
       aspect-ratio: 16 / 9;
       border-radius: clamp(8px, 1vw, 14px);
       overflow: hidden;
-      background: #111214;
+      background: var(--bg-elevated);
       box-shadow: 0 clamp(4px, 0.8vw, 10px) clamp(15px, 2.5vw, 30px) rgba(0, 0, 0, 0.45);
     }
 
@@ -1120,13 +1133,13 @@
       width: clamp(38px, 5.5vw, 62px);
       height: clamp(38px, 5.5vw, 62px);
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.92);
-      color: #0b0d0f;
+      background: var(--accent);
+      color: #060910;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: clamp(0.95rem, 1.8vw, 1.4rem);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 4px 15px rgba(0, 229, 255, 0.35);
     }
 
     .highlight-info {
@@ -1138,7 +1151,7 @@
 
     .highlight-tag {
       font-size: clamp(0.6rem, 1vw, 0.78rem);
-      color: var(--golden);
+      color: var(--accent);
       text-transform: uppercase;
       letter-spacing: 0.08em;
       font-weight: 700;
@@ -1161,7 +1174,7 @@
       width: clamp(30px, 3.5vw, 46px);
       height: clamp(30px, 3.5vw, 46px);
       border-radius: 50%;
-      background: rgba(11, 13, 15, 0.65);
+      background: rgba(6, 9, 16, 0.65);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       border: 1px solid rgba(255, 255, 255, 0.15);
@@ -1178,8 +1191,9 @@
     }
 
     .carousel-arrow:hover {
-      background: rgba(11, 13, 15, 0.9);
-      border-color: rgba(255, 255, 255, 0.3);
+      background: rgba(6, 9, 16, 0.9);
+      border-color: rgba(0, 229, 255, 0.5);
+      color: var(--accent);
       transform: translateY(-50%) scale(1.08);
     }
 
@@ -1339,7 +1353,7 @@
         border-width: clamp(2px, 0.3vw, 3px);
         gap: clamp(0.4rem, 0.8vw, 0.6rem);
         border-radius: 0 clamp(30px, 5vw, 50px) clamp(30px, 5vw, 50px) 0;
-        border-left: clamp(2px, 0.3vw, 3px) solid #0b0d0f;
+        border-left: clamp(2px, 0.3vw, 3px) solid #060910;
         width: auto;
       }
 
@@ -1570,11 +1584,11 @@
         width: clamp(28%, 40%, 52%);
         background: linear-gradient(
           to right,
-          #0b0d0f 0%,
-          #0b0d0f 8%,
-          rgba(11, 13, 15, 0.8) 22%,
-          rgba(11, 13, 15, 0.4) 45%,
-          rgba(11, 13, 15, 0.1) 70%,
+          #060910 0%,
+          #060910 8%,
+          rgba(6, 9, 16, 0.8) 22%,
+          rgba(6, 9, 16, 0.4) 45%,
+          rgba(6, 9, 16, 0.1) 70%,
           transparent 100%
         );
       }
@@ -1640,11 +1654,11 @@
         width: clamp(25%, 38%, 48%);
         background: linear-gradient(
           to right,
-          #0b0d0f 0%,
-          #0b0d0f 8%,
-          rgba(11, 13, 15, 0.75) 22%,
-          rgba(11, 13, 15, 0.35) 45%,
-          rgba(11, 13, 15, 0.1) 70%,
+          #060910 0%,
+          #060910 8%,
+          rgba(6, 9, 16, 0.75) 22%,
+          rgba(6, 9, 16, 0.35) 45%,
+          rgba(6, 9, 16, 0.1) 70%,
           transparent 100%
         );
       }
@@ -1740,10 +1754,10 @@
         width: clamp(20%, 32%, 42%);
         background: linear-gradient(
           to right,
-          #0b0d0f 0%,
-          #0b0d0f 8%,
-          rgba(11, 13, 15, 0.7) 20%,
-          rgba(11, 13, 15, 0.3) 45%,
+          #060910 0%,
+          #060910 8%,
+          rgba(6, 9, 16, 0.7) 20%,
+          rgba(6, 9, 16, 0.3) 45%,
           transparent 100%
         );
       }
@@ -1951,7 +1965,7 @@
 
     @media (prefers-color-scheme: light) {
       :root {
-        --bg-primary: #0b0d0f;
+        --bg-primary: #060910;
       }
     }
     /* ---------- SCROLL-PEEK FIX ----------
@@ -1986,7 +2000,7 @@
       flex-direction: column;
       align-items: center;
       gap: 3px;
-      color: #fff;
+      color: var(--accent);
       opacity: 0.9;
       pointer-events: none;
       animation: scrollBounce 1.8s ease-in-out infinite;
@@ -2088,18 +2102,18 @@
          <!-- SLIDE 1 -->
     <section class="poster-section active" data-slide="0">
 
-           <!-- Poster Image -->
-           <picture>
-        <source 
-          media="(orientation: portrait) and (max-width: 768px)" 
-          srcset="https://img.tod.tv/resources/images/link/28d15912-f426-37f4-a312-1438f304d065/8c0c7840-d932-5be7-abf7-2d7d3b1fb6b9/639258270920000000/0:20:720:960/750x800/108d7a13-a79a-4da2-812b-8f1800a0e318_hero-block-34-en.webp"
+      <!-- Poster Image -->
+      <picture>
+        <source
+          media="(orientation: portrait) and (max-width: 768px)"
+          srcset="https://sportlinkzz.pages.dev/ind-wi.jpg"
         />
-        <source 
-          media="(min-width: 769px)" 
-         srcset="https://img.tod.tv/resources/images/link/649140f0-d6ba-32ed-8233-66ce777959b5/6060b852-c1ae-5aac-985e-64478041ec5e/639258270910000000/0:0:1912:1080/1920x1080/7f8ce1fe-60bd-4ea5-bd20-f983e65b279b_wallpaper-169-en.webp"
+        <source
+          media="(min-width: 769px)"
+          srcset="https://sportlinkzz.pages.dev/ind-wi.jpg"
         />
-        <img 
-          src="https://img.tod.tv/resources/images/link/649140f0-d6ba-32ed-8233-66ce777959b5/6060b852-c1ae-5aac-985e-64478041ec5e/639258270910000000/0:0:1912:1080/1920x1080/7f8ce1fe-60bd-4ea5-bd20-f983e65b279b_wallpaper-169-en.webp" 
+        <img
+          src="https://sportlinkzz.pages.dev/ind-wi.jpg"
           alt="Sportlink poster"
           class="poster-image"
           loading="lazy"
@@ -2537,7 +2551,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Create a loading indicator
   container.innerHTML = `
     <div style="color: rgba(255,255,255,0.3); text-align: center; padding: 2rem;">
-      <div style="display: inline-block; width: 30px; height: 30px; border: 3px solid rgba(255,255,255,0.1); border-radius: 50%; border-top-color: var(--golden); animation: spin 1s ease-in-out infinite;"></div>
+      <div style="display: inline-block; width: 30px; height: 30px; border: 3px solid rgba(255,255,255,0.1); border-radius: 50%; border-top-color: var(--accent); animation: spin 1s ease-in-out infinite;"></div>
     </div>
   `;
 
@@ -2617,16 +2631,16 @@ document.addEventListener('DOMContentLoaded', function() {
     #tgOverlay.show { display: flex; }
     #tgCard {
       width: 100%; max-width: 400px;
-      background: linear-gradient(160deg, #121821, #0a0c0f);
-      border: 1px solid rgba(0,136,204,0.25);
+      background: linear-gradient(160deg, #0d1622, #05070d);
+      border: 1px solid rgba(0, 136, 204, 0.3);
       border-radius: 24px; padding: 36px 28px 28px;
-      box-shadow: 0 40px 80px rgba(0,0,0,0.8), 0 0 60px rgba(0,136,204,0.06);
+      box-shadow: 0 40px 80px rgba(0,0,0,0.8), 0 0 60px rgba(0, 136, 204, 0.08);
       text-align: center; position: relative; overflow: hidden;
     }
     #tgCard::before {
       content: ""; position: absolute; top: -50%; left: -50%;
       width: 200%; height: 200%;
-      background: radial-gradient(circle at 30% 20%, rgba(0,136,204,0.06), transparent 60%);
+      background: radial-gradient(circle at 30% 20%, rgba(0, 229, 255, 0.07), transparent 60%);
       pointer-events: none;
     }
     #tgIcon {
