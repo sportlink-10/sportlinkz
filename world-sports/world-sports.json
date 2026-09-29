@@ -1,39 +1,10 @@
 {
-  "timestamp": "2026-09-29T07:21:33.378628",
-  "total_matches": 16,
-  "live_count": 2,
+  "timestamp": "2026-09-29T12:34:39.401751",
+  "total_matches": 15,
+  "live_count": 1,
   "upcoming_count": 14,
   "completed_count": 0,
   "matches": [
-    {
-      "match_id": "1155",
-      "title": "Bangladesh vs Malaysia 4th Quarter-Final",
-      "teams": "Bangladesh vs Malaysia 4th Quarter-Final",
-      "sport": "cricket",
-      "sport_display": "Cricket",
-      "status": "live",
-      "status_display": "LIVE",
-      "runtime": "00h 00m 00s",
-      "thumbnail": "https://m.media-amazon.com/images/S/le-target-images-prod/amzn1.dv.gti.0d8b2686-e4bb-4abc-ae50-9a2b4f64e44b/1/HERO-16X9/en-US._UR1920,1080_SX1080_FMjpg_.jpeg",
-      "league": "Asian Games 2026 (Cricket T20)",
-      "viewers": "46",
-      "viewers_type": "Watching",
-      "date": null,
-      "time": null,
-      "servers": null,
-      "page_url": "/world-sports/player.html?id=1155",
-      "match_url": "live/bangladesh-vs-malaysia-4th-quarter-final-1155",
-      "stream_url": "https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8",
-      "server_count": 5,
-      "server_urls": [
-        "https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8",
-        "https://robitv.com/lps/https://ml-pull-dvc-myco.io:2096/TENSPORTS_HD/mono.m3u8",
-        "https://drk6xq0vhn.gpcdn.net/live/ten_5_hd_720/index.m3u8",
-        "https://drk6xq0vhn.gpcdn.net/live/ten_2_hd_720/index.m3u8",
-        "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8"
-      ],
-      "last_updated": "2026-09-29T07:18:31.131673"
-    },
     {
       "match_id": "1081",
       "title": "Asian Games 2026",
@@ -45,7 +16,7 @@
       "runtime": "--",
       "thumbnail": "https://myimgs.org/storage/images/44609/AsianGames2026.jpg",
       "league": "Asian Games 2026",
-      "viewers": "588",
+      "viewers": "679",
       "viewers_type": "Watching",
       "date": null,
       "time": null,
@@ -66,7 +37,7 @@
         "https://crickcast-fam.pages.dev/api/proxy?u=https://cloudplay-sonyliv.pages.dev/ten1.m3u8",
         "https://crickcast-fam.pages.dev/api/proxy?u=https://cloudplay-sonyliv.pages.dev/ten3.m3u8"
       ],
-      "last_updated": "2026-09-29T07:18:32.011492"
+      "last_updated": "2026-09-29T12:33:01.155374"
     },
     {
       "match_id": "1132",
@@ -79,7 +50,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://d34080pnh6e62j.cloudfront.net/images/channels/mobile_large/17901552361020x576.jpg",
       "league": "West Indies Tour of India 2026",
-      "viewers": "10",
+      "viewers": "11",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -89,7 +60,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.073283"
+      "last_updated": "2026-09-29T12:33:01.765179"
     },
     {
       "match_id": "1099",
@@ -102,7 +73,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/AUS-vs-SA_Web-match-card.png",
       "league": "Australia tour of South Africa",
-      "viewers": "12",
+      "viewers": "13",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -112,7 +83,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.074011"
+      "last_updated": "2026-09-29T12:33:01.765913"
     },
     {
       "match_id": "1037",
@@ -125,7 +96,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "league": "World Championship of Legends, 2026",
-      "viewers": "17",
+      "viewers": "18",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -135,7 +106,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.074680"
+      "last_updated": "2026-09-29T12:33:01.766556"
     },
     {
       "match_id": "1083",
@@ -148,7 +119,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://origin-staticv2.sonyliv.com/videoasset_images/manage_file/1000024504/1790111246357701_FIFA_international_friendlies_india_vs_brazil_dated_landscape_thumb.jpg",
       "league": "International Friendly Football 2026",
-      "viewers": "16",
+      "viewers": "19",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -158,7 +129,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.075311"
+      "last_updated": "2026-09-29T12:33:01.767163"
     },
     {
       "match_id": "1146",
@@ -171,7 +142,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_cricket-old.jpg",
       "league": "World Championship of Legends, 2026",
-      "viewers": "2",
+      "viewers": "3",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -181,7 +152,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.075958"
+      "last_updated": "2026-09-29T12:33:01.767784"
     },
     {
       "match_id": "1100",
@@ -194,7 +165,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/AUS-vs-SA_Web-match-card.png",
       "league": "Australia tour of South Africa",
-      "viewers": "12",
+      "viewers": "13",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -204,7 +175,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.076597"
+      "last_updated": "2026-09-29T12:33:01.768400"
     },
     {
       "match_id": "1000",
@@ -217,7 +188,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/4249136_53025_ALK_ALQ_FC-Web.png",
       "league": "Roshn Saudi League 2026-2027",
-      "viewers": "21",
+      "viewers": "22",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -227,7 +198,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.077211"
+      "last_updated": "2026-09-29T12:33:01.768997"
     },
     {
       "match_id": "1001",
@@ -240,7 +211,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/4249137_53025_AFF_AAS_FC-Web.png",
       "league": "Roshn Saudi League 2026-2027",
-      "viewers": "18",
+      "viewers": "19",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -250,7 +221,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.077848"
+      "last_updated": "2026-09-29T12:33:01.769614"
     },
     {
       "match_id": "1008",
@@ -263,7 +234,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/4249138_53025_ANF_DIR_FC-Web.png",
       "league": "Roshn Saudi League 2026-2027",
-      "viewers": "19",
+      "viewers": "20",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -273,7 +244,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.078475"
+      "last_updated": "2026-09-29T12:33:01.770219"
     },
     {
       "match_id": "1042",
@@ -286,7 +257,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/4249139_53025_AHS_ITT_FC-Web.png",
       "league": "Roshn Saudi League 2026-2027",
-      "viewers": "15",
+      "viewers": "16",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -296,7 +267,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.079083"
+      "last_updated": "2026-09-29T12:33:01.770810"
     },
     {
       "match_id": "1049",
@@ -309,7 +280,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
       "league": "LALIGA 2026-27",
-      "viewers": "13",
+      "viewers": "14",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -319,7 +290,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.079718"
+      "last_updated": "2026-09-29T12:33:01.771412"
     },
     {
       "match_id": "1043",
@@ -332,7 +303,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/FC_Sports_Default_Football-old-copy.jpg",
       "league": "LALIGA 2026-27",
-      "viewers": "15",
+      "viewers": "16",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -342,7 +313,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.080348"
+      "last_updated": "2026-09-29T12:33:01.771990"
     },
     {
       "match_id": "1101",
@@ -355,7 +326,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/AUS-vs-SA_Web-match-card.png",
       "league": "Australia tour of South Africa",
-      "viewers": "11",
+      "viewers": "12",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -365,7 +336,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.080960"
+      "last_updated": "2026-09-29T12:33:01.772591"
     },
     {
       "match_id": "1102",
@@ -378,7 +349,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/AUS-vs-SA_Web-match-card.png",
       "league": "Australia tour of South Africa",
-      "viewers": "10",
+      "viewers": "11",
       "viewers_type": "Waiting",
       "date": null,
       "time": null,
@@ -388,7 +359,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-09-29T07:18:33.081590"
+      "last_updated": "2026-09-29T12:33:01.773181"
     }
   ]
 }
