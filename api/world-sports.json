@@ -1,36 +1,10 @@
 {
-  "timestamp": "2026-10-03T07:55:16.055149",
-  "total_matches": 18,
-  "live_count": 3,
+  "timestamp": "2026-10-03T08:11:52.166698",
+  "total_matches": 17,
+  "live_count": 2,
   "upcoming_count": 15,
   "completed_count": 0,
   "matches": [
-    {
-      "match_id": "1182",
-      "title": "india vs pakistan_T20",
-      "teams": "india vs pakistan_T20",
-      "sport": "cricket",
-      "sport_display": "Cricket",
-      "status": "live",
-      "status_display": "LIVE",
-      "runtime": "00h 00m 00s",
-      "thumbnail": "https://media.cricketwinner.com/media/2026/10/India-vs-Pakistan-Asian-Games-2026-Cricket-Final-Where-to-Watch-Live.webp",
-      "league": "Asian games",
-      "viewers": "390",
-      "viewers_type": "Watching",
-      "date": null,
-      "time": null,
-      "servers": null,
-      "page_url": "/world-sports/player.html?id=1182",
-      "match_url": "live/india-vs-pakistan-t20-1182",
-      "stream_url": "https://robitv.com/lps/https://ml-pull-dvc-myco.io:2096/TENSPORTS_HD/mono.m3u8",
-      "server_count": 2,
-      "server_urls": [
-        "https://robitv.com/lps/https://ml-pull-dvc-myco.io:2096/TENSPORTS_HD/mono.m3u8",
-        "https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8"
-      ],
-      "last_updated": "2026-10-03T07:49:58.238525"
-    },
     {
       "match_id": "1173",
       "title": "Brampton Blitz vs Mississauga Masters",
@@ -42,7 +16,7 @@
       "runtime": "00h 00m 00s",
       "thumbnail": "https://images.fancode.com/skillup-uploads/cms-media/4249822_53099_BBZ_MGM_FC-Web.png",
       "league": "Roshn Saudi League 2026-2027",
-      "viewers": "34",
+      "viewers": "38",
       "viewers_type": "Watching",
       "date": null,
       "time": null,
@@ -52,7 +26,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:00.803553"
+      "last_updated": "2026-10-03T08:10:09.407017"
     },
     {
       "match_id": "1081",
@@ -65,7 +39,7 @@
       "runtime": "--",
       "thumbnail": "https://myimgs.org/storage/images/44609/AsianGames2026.jpg",
       "league": "Asian Games 2026",
-      "viewers": "739",
+      "viewers": "745",
       "viewers_type": "Watching",
       "date": null,
       "time": null,
@@ -88,7 +62,7 @@
         "https://alixbd.com/playlistconfig/toffee.php?ts_proxy=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbS9jZG4vbGl2ZS9zb255X3Nwb3J0c18yX2hkLzU3Ni81NzYubTN1OD9oZG50bD1FeHBpcmVzPTE3OTA4ODY0OTB%2BX0dPPUdlbmVyYXRlZH5VUkxQcmVmaXg9YUhSMGNITTZMeTl3Y205a0xXeHBibVZoY2kxdFpXUnBZUzUwYjJabVpXVnNhWFpsTG1OdmJRfkRhdGE9ZXlKemRXSnpZM0pwWW1WeVgybGtJam9pTW1ZeU5tRXlabVl0T0RSa1lTMDBOelJpTFdKaU4yRXRNakZsWTJWaFpUSXlOREJtSW4wflNpZ25hdHVyZT1BZGhCMkxjWUtzR2k5Mzd3QnIxU0l6T0RHUzVlVVNIdEVla1FEbGNENlY1RDQtczFHM1E4Y25xYnFJN1Q0NEVhVG1LTkVlOUlPZkZKVUtUcVJlU2hHN0xueW5nSw%3D%3D",
         "https://alixbd.com/playlistconfig/toffee.php?channel=Sony%20Ten%20Sports%202%20HD&raw=1"
       ],
-      "last_updated": "2026-10-03T07:50:01.146338"
+      "last_updated": "2026-10-03T08:10:10.290330"
     },
     {
       "match_id": "1037",
@@ -111,7 +85,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.761715"
+      "last_updated": "2026-10-03T08:10:10.694532"
     },
     {
       "match_id": "1083",
@@ -134,7 +108,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.762435"
+      "last_updated": "2026-10-03T08:10:10.694988"
     },
     {
       "match_id": "1146",
@@ -157,7 +131,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.763076"
+      "last_updated": "2026-10-03T08:10:10.695324"
     },
     {
       "match_id": "1174",
@@ -180,7 +154,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.763706"
+      "last_updated": "2026-10-03T08:10:10.695668"
     },
     {
       "match_id": "1175",
@@ -203,7 +177,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.764347"
+      "last_updated": "2026-10-03T08:10:10.695994"
     },
     {
       "match_id": "1176",
@@ -226,7 +200,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.764951"
+      "last_updated": "2026-10-03T08:10:10.696307"
     },
     {
       "match_id": "1100",
@@ -249,7 +223,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.765592"
+      "last_updated": "2026-10-03T08:10:10.696628"
     },
     {
       "match_id": "1000",
@@ -272,7 +246,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.766220"
+      "last_updated": "2026-10-03T08:10:10.696955"
     },
     {
       "match_id": "1001",
@@ -295,7 +269,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.766831"
+      "last_updated": "2026-10-03T08:10:10.697272"
     },
     {
       "match_id": "1008",
@@ -318,7 +292,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.767454"
+      "last_updated": "2026-10-03T08:10:10.697587"
     },
     {
       "match_id": "1042",
@@ -341,7 +315,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.768077"
+      "last_updated": "2026-10-03T08:10:10.697906"
     },
     {
       "match_id": "1049",
@@ -364,7 +338,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.768686"
+      "last_updated": "2026-10-03T08:10:10.698218"
     },
     {
       "match_id": "1043",
@@ -387,7 +361,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.769322"
+      "last_updated": "2026-10-03T08:10:10.698532"
     },
     {
       "match_id": "1101",
@@ -410,7 +384,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.769921"
+      "last_updated": "2026-10-03T08:10:10.698873"
     },
     {
       "match_id": "1102",
@@ -433,7 +407,7 @@
       "stream_url": null,
       "server_count": 0,
       "server_urls": [],
-      "last_updated": "2026-10-03T07:50:02.770539"
+      "last_updated": "2026-10-03T08:10:10.699200"
     }
   ]
 }
